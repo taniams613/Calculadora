@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_calculadora"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/b1"
+        style="@style/botoes_numeros"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="134dp"
+        android:layout_marginStart="62dp"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/b2"
+        style="@style/botoes_numeros"
+        android:layout_alignEnd="@+id/tvisor"
+        android:layout_alignTop="@+id/b1"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/b3"
+        style="@style/botoes_numeros"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/b1"
+        android:layout_marginStart="215dp"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/b4"
+        style="@style/botoes_numeros"
+        android:layout_alignStart="@+id/bsubtrair"
+        android:layout_alignTop="@+id/b1"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/b5"
+        style="@style/botoes_numeros"
+        android:layout_alignStart="@+id/bmultiplicar"
+        android:layout_alignTop="@+id/b1"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/blimpar"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_alignStart="@+id/bdividir"
+        android:layout_alignTop="@+id/b1"
+        android:background="@drawable/grad_c"
+        android:text="C"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/b6"
+        style="@style/botoes_numeros"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/b1"
+        android:layout_marginBottom="35dp"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_alignBottom="@+id/b6"
+        android:layout_alignStart="@+id/b2"
+        android:text="7"
+        style="@style/botoes_numeros" />
+
+    <Button
+        android:id="@+id/b8"
+        android:layout_alignBottom="@+id/b6"
+        android:layout_alignStart="@+id/b3"
+        android:text="8"
+        style="@style/botoes_numeros" />
+
+    <Button
+        android:id="@+id/b9"
+        android:layout_alignBottom="@+id/b6"
+        android:layout_alignStart="@+id/b4"
+        android:text="9"
+        style="@style/botoes_numeros" />
+
+    <Button
+        android:id="@+id/b0"
+        android:layout_alignBottom="@+id/b6"
+        android:layout_alignStart="@+id/b5"
+        android:text="0"
+        style="@style/botoes_numeros" />
+
+    <Button
+        android:id="@+id/bigual"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_alignBottom="@+id/b6"
+        android:layout_alignStart="@+id/blimpar"
+        android:text="="
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/grad_igual"/>
+
+    <TextView
+        android:id="@+id/tvisor"
+        android:layout_width="142dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/b1"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/visor"
+        android:paddingTop="12dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bsomar"
+        android:layout_alignStart="@+id/b3"
+        android:layout_alignTop="@+id/tvisor"
+        android:text="+"
+        style="@style/botoes_sinais" />
+
+    <Button
+        android:id="@+id/bsubtrair"
+        style="@style/botoes_sinais"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/tvisor"
+        android:layout_marginStart="297dp"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/bmultiplicar"
+        style="@style/botoes_sinais"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tvisor"
+        android:layout_marginEnd="232dp"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/bdividir"
+        style="@style/botoes_sinais"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tvisor"
+        android:layout_marginEnd="149dp"
+        android:text="/" />
+</RelativeLayout>
